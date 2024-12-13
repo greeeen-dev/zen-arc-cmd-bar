@@ -51,6 +51,10 @@ SOFTWARE.
   }
 }
 
+.urlbarView-row-inner {
+  border-radius: calc(var(--urlbarView-row-gutter) + var(--toolbarbutton-border-radius));
+}
+
 .urlbarView-title, .urlbarView-title-separator, .urlbarView-action, .urlbarView-url {
   margin-top: auto !important;
   margin-bottom: auto !important;
@@ -81,7 +85,6 @@ SOFTWARE.
 
 .urlbarView-row:hover, .urlbarView-row-inner[selected] {
   background-color: var(--zen-colors-primary) !important;
-  border-radius: calc(var(--urlbarView-row-gutter) + var(--toolbarbutton-border-radius));
 
   .urlbarView-favicon {
     background-color: white !important;
@@ -89,5 +92,13 @@ SOFTWARE.
 
   .urlbarView-url, .urlbarView-title-separator::before {
     color: color-mix(in srgb, var(--zen-colors-primary) 30%, lightgray) !important;
+  }
+}
+
+.urlbarView-row:hover {
+  background: transparent !important;
+
+  .urlbarView-row-inner {
+    background: var(--zen-colors-primary) !important;
   }
 }
