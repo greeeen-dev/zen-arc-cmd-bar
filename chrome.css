@@ -79,22 +79,14 @@ SOFTWARE.
   margin-right: 0 !important;
 }
 
-.urlbarView-row {
-  display: none !important;
+.urlbarView-row:hover, .urlbarView-row-inner[selected] {
+  background-color: var(--zen-colors-primary) !important;
 
-  &:nth-child(-n+5) {
-    display: flex !important;
+  .urlbarView-favicon {
+    background-color: white !important;
   }
 
-  &:hover {
-    background-color: var(--zen-colors-primary) !important;
-
-    .urlbarView-favicon {
-      background-color: white !important;
-    }
-
-    .urlbarView-url, .urlbarView-title-separator::before {
-      color: color-mix(in srgb, var(--zen-colors-primary) 30%, lightgray) !important;
-    }
+  .urlbarView-url, .urlbarView-title-separator::before {
+    color: color-mix(in srgb, var(--zen-colors-primary) 30%, lightgray) !important;
   }
 }
