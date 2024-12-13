@@ -81,6 +81,7 @@ SOFTWARE.
 
 .urlbarView-row:hover, .urlbarView-row-inner[selected] {
   background-color: var(--zen-colors-primary) !important;
+  border-radius: calc(var(--urlbarView-row-gutter) + var(--toolbarbutton-border-radius));
 
   .urlbarView-favicon {
     background-color: white !important;
